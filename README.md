@@ -1,6 +1,5 @@
 ## <h1 align="center">WelcomeTele<p align="center">
 
----
 
 Teleports brand-new players (first time only) to a preset location as they finish their first spawn. Includes a reliable facing fix, configurable delays, and a customizable welcome message with placeholders.
 
