@@ -78,7 +78,7 @@ Clears the saved destination (teleports are disabled until set again).
 
 All commands require the welcometele.admin permission.
 
-Configuration
+## <h1 align="center">Configuration<p align="center">
 
 Edit oxide/config/WelcomeTele.json, then reload:
 
