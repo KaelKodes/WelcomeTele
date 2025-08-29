@@ -96,7 +96,6 @@ Default config:
 }
 
 
----
 
 ## <h1 align="center">Options:<p align="center">
 
@@ -119,7 +118,6 @@ Wait time after teleport before applying the facing direction. Typical range: 0.
 EnableFacingFix (bool)
 If true, the plugin pins the player’s yaw and pitch to prevent client snap-back.
 
----
 
 ## <h1 align="center">CFG Files<p align="center">
 
@@ -127,7 +125,6 @@ Config: oxide/config/WelcomeTele.json
 
 Saved Position: oxide/data/WelcomeTele.json (written after /wtset)
 
----
 
 ## <h1 align="center">How It Works<p align="center">
 
@@ -137,7 +134,6 @@ Waits until the player is fully ready (not receiving snapshot, alive, connected)
 
 If enabled, applies a facing fix after FacingDelay by updating entity rotation, eyes rotation, server-side view angles, and sending input.setyaw/pitch to the client
 
----
 
 ## <h1 align="center">Quickstart<p align="center">
 
@@ -171,7 +167,6 @@ Increase FacingDelay to 0.20–0.30 and keep EnableFacingFix true.
 Teleported to an unsafe or wrong spot
 Move to a better location and run /wtset again. The plugin ignores 0,0,0 to prevent accidental origin teleports.
 
----
 
 ## <h1 align="center">Changelog<p align="center">
 
