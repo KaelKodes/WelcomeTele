@@ -1,4 +1,5 @@
 WelcomeTele
+---
 
 Teleports brand-new players (first time only) to a preset location as they finish their first spawn. Includes a reliable facing fix, configurable delays, and a customizable welcome message with placeholders.
 
@@ -7,7 +8,9 @@ Version: 1.3.0
 Game: Rust
 Framework: uMod/Oxide
 
-Overview
+---
+
+##Overview
 
 WelcomeTele lets you define a spawn location (including facing/yaw) and automatically teleports each player there once. It waits until the player is fully spawned (post-snapshot), then optionally pins the player’s view direction so it will not snap back.
 
