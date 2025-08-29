@@ -15,7 +15,6 @@ Framework: uMod/Oxide
 
 WelcomeTele lets you define a spawn location (including facing/yaw) and automatically teleports each player there once. It waits until the player is fully spawned (post-snapshot), then optionally pins the player’s view direction so it will not snap back.
 
----
 
 ## <h1 align="center">Features<p align="center">
 
