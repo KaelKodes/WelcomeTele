@@ -30,7 +30,7 @@ Admin tools to set, show, and clear the destination
 Safety guard to avoid teleporting to 0,0,0
 
 
-##<h1 align="center"> Requirements<p align="center">
+## <h1 align="center">Requirements<p align="center">
 
 Rust server with uMod/Oxide
 
