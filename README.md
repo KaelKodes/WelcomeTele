@@ -42,7 +42,7 @@ Rust server with uMod/Oxide
 
 Place WelcomeTele.cs into oxide/plugins/.
 
-Load or reload the plugin:
+Load or reload the plugin if needed:
 
 oxide.reload WelcomeTele
 
