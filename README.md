@@ -29,13 +29,11 @@ Admin tools to set, show, and clear the destination
 
 Safety guard to avoid teleporting to 0,0,0
 
----
 
 ##<h1 align="center"> Requirements<p align="center">
 
 Rust server with uMod/Oxide
 
----
 
 ## <h1 align="center">Installation<p align="center">
 
@@ -55,7 +53,6 @@ The saved teleport position is stored at:
 
 oxide/data/WelcomeTele.json
 
----
 
 ## <h1 align="center">Permissions<p align="center">
 
@@ -67,7 +64,6 @@ Reset a single player (allow them to be teleported again):
 
 oxide.revoke user <steamid> welcometele.used
 
----
 
 ## <h1 align="center">Admin Chat Commands<p align="center">
 
