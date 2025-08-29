@@ -14,7 +14,9 @@ Framework: uMod/Oxide
 
 WelcomeTele lets you define a spawn location (including facing/yaw) and automatically teleports each player there once. It waits until the player is fully spawned (post-snapshot), then optionally pins the player’s view direction so it will not snap back.
 
-Features
+---
+
+## Features
 
 One-time welcome teleport per player
 
@@ -28,11 +30,15 @@ Admin tools to set, show, and clear the destination
 
 Safety guard to avoid teleporting to 0,0,0
 
-Requirements
+---
+
+## Requirements
 
 Rust server with uMod/Oxide
 
-Installation
+---
+
+## Installation
 
 Place WelcomeTele.cs into oxide/plugins/.
 
@@ -50,7 +56,9 @@ The saved teleport position is stored at:
 
 oxide/data/WelcomeTele.json
 
-Permissions
+---
+
+## Permissions
 
 welcometele.admin — required for admin commands (/wtset, /wtwhere, /wtclear)
 
@@ -60,7 +68,9 @@ Reset a single player (allow them to be teleported again):
 
 oxide.revoke user <steamid> welcometele.used
 
-Admin Chat Commands
+---
+
+## Admin Chat Commands
 
 /wtset
 Saves your current position and facing as the welcome teleport destination.
@@ -91,7 +101,9 @@ Default config:
 }
 
 
-Options:
+---
+
+## Options:
 
 TeleportMessage (string)
 Chat message shown to the player after teleport. Placeholders:
@@ -112,13 +124,17 @@ Wait time after teleport before applying the facing direction. Typical range: 0.
 EnableFacingFix (bool)
 If true, the plugin pins the player’s yaw and pitch to prevent client snap-back.
 
-Data Files
+---
+
+## Data Files
 
 Config: oxide/config/WelcomeTele.json
 
 Saved Position: oxide/data/WelcomeTele.json (written after /wtset)
 
-How It Works
+---
+
+## How It Works
 
 Hooks multiple spawn events: OnPlayerInit, OnPlayerSpawned, OnPlayerRespawned, and OnPlayerSleepEnded
 
@@ -126,7 +142,9 @@ Waits until the player is fully ready (not receiving snapshot, alive, connected)
 
 If enabled, applies a facing fix after FacingDelay by updating entity rotation, eyes rotation, server-side view angles, and sending input.setyaw/pitch to the client
 
-Quickstart
+---
+
+## Quickstart
 
 Stand where you want new players to appear and face the direction they should look.
 
@@ -158,7 +176,9 @@ Increase FacingDelay to 0.20–0.30 and keep EnableFacingFix true.
 Teleported to an unsafe or wrong spot
 Move to a better location and run /wtset again. The plugin ignores 0,0,0 to prevent accidental origin teleports.
 
-Changelog
+---
+
+## Changelog
 
 1.3.0
 Robust first-spawn handling with post-snapshot readiness check. Multiple hooks to catch edge cases.
