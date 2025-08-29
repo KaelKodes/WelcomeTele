@@ -9,9 +9,9 @@ Version: 1.3.0
 Game: Rust
 Framework: uMod/Oxide
 
----
 
 ## <h1 align="center">Overview<p align="center">
+
 
 WelcomeTele lets you define a spawn location (including facing/yaw) and automatically teleports each player there once. It waits until the player is fully spawned (post-snapshot), then optionally pins the player’s view direction so it will not snap back.
 
