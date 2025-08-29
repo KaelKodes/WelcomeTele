@@ -1,4 +1,4 @@
-WelcomeTele
+<h1 align="center">WelcomeTele<p align="center">
 ---
 
 Teleports brand-new players (first time only) to a preset location as they finish their first spawn. Includes a reliable facing fix, configurable delays, and a customizable welcome message with placeholders.
@@ -10,13 +10,13 @@ Framework: uMod/Oxide
 
 ---
 
-## Overview
+## <h1 align="center">Overview<p align="center">
 
 WelcomeTele lets you define a spawn location (including facing/yaw) and automatically teleports each player there once. It waits until the player is fully spawned (post-snapshot), then optionally pins the player’s view direction so it will not snap back.
 
 ---
 
-## Features
+## <h1 align="center">Features<p align="center">
 
 One-time welcome teleport per player
 
@@ -32,13 +32,13 @@ Safety guard to avoid teleporting to 0,0,0
 
 ---
 
-## Requirements
+##<h1 align="center"> Requirements<p align="center">
 
 Rust server with uMod/Oxide
 
 ---
 
-## Installation
+## <h1 align="center">Installation<p align="center">
 
 Place WelcomeTele.cs into oxide/plugins/.
 
@@ -58,7 +58,7 @@ oxide/data/WelcomeTele.json
 
 ---
 
-## Permissions
+## <h1 align="center">Permissions<p align="center">
 
 welcometele.admin — required for admin commands (/wtset, /wtwhere, /wtclear)
 
@@ -70,7 +70,7 @@ oxide.revoke user <steamid> welcometele.used
 
 ---
 
-## Admin Chat Commands
+## <h1 align="center">Admin Chat Commands<p align="center">
 
 /wtset
 Saves your current position and facing as the welcome teleport destination.
@@ -103,7 +103,7 @@ Default config:
 
 ---
 
-## Options:
+## <h1 align="center">Options:<p align="center">
 
 TeleportMessage (string)
 Chat message shown to the player after teleport. Placeholders:
@@ -126,7 +126,7 @@ If true, the plugin pins the player’s yaw and pitch to prevent client snap-bac
 
 ---
 
-## Data Files
+## <h1 align="center">CFG Files<p align="center">
 
 Config: oxide/config/WelcomeTele.json
 
@@ -134,7 +134,7 @@ Saved Position: oxide/data/WelcomeTele.json (written after /wtset)
 
 ---
 
-## How It Works
+## <h1 align="center">How It Works<p align="center">
 
 Hooks multiple spawn events: OnPlayerInit, OnPlayerSpawned, OnPlayerRespawned, and OnPlayerSleepEnded
 
@@ -144,7 +144,7 @@ If enabled, applies a facing fix after FacingDelay by updating entity rotation, 
 
 ---
 
-## Quickstart
+## <h1 align="center">Quickstart<p align="center">
 
 Stand where you want new players to appear and face the direction they should look.
 
@@ -159,7 +159,7 @@ Reload:
 
 oxide.reload WelcomeTele
 
-Troubleshooting
+## <h1 align="center">Troubleshooting<p align="center">
 
 Message: No welcome-teleport location set
 You have not run /wtset yet, or you cleared it with /wtclear.
@@ -178,7 +178,7 @@ Move to a better location and run /wtset again. The plugin ignores 0,0,0 to prev
 
 ---
 
-## Changelog
+## <h1 align="center">Changelog<p align="center">
 
 1.3.0
 Robust first-spawn handling with post-snapshot readiness check. Multiple hooks to catch edge cases.
@@ -192,6 +192,6 @@ Safer data handling, lowercase permissions, admin quality-of-life commands.
 1.0.0
 Initial release.
 
-License
+## <h1 align="center">License<p align="center">
 
 Use, modify, and distribute freely. Please keep the header credit to CTS Kael.
